@@ -65,9 +65,10 @@ this.weight ++
 this.mood --
 this.bankAccount += 10
 }
-buyHamster(){
+buyHamster(hamster) {
 this.mood += 10
-this.bankAccount -= this.hamsters.getPrice( )
+this.bankAccount -= hamster.getPrice()
+this.hamsters.push(hamster)
 }
 }
 
@@ -78,4 +79,29 @@ const mainPerson = new Person ("Steph Curry", 23, 5, 200, 5, [1] , 500 )
 // mainPerson.ageUp()
 // console.log(mainPerson)
 
+const sndPerson = new Person ("Timmy", 5, )
+for (i = 0; i < 5; i++) {
+  sndPerson.eat();
+}
+for (i = 0; i < 5; i++) {
+  sndPerson.exercise();
+}
+for (i = 0; i < 9; i++) {
+  sndPerson.ageUp()
+}
+// console.log(sndPerson)
 
+const animal = new Hamster("Gus","Timmy")
+// sndPerson.buyHamster(animal)
+// console.log(sndPerson)
+
+for ( i = 0; i < 15; i++) {
+  mainPerson.ageUp();
+}
+for ( i = 0; i < 2; i++) {
+  mainPerson.eat();
+}
+for ( i = 0; i < 2; i++) {
+  mainPerson.exercise();
+}
+// console.log(mainPerson)
