@@ -105,3 +105,22 @@ for ( i = 0; i < 2; i++) {
   mainPerson.exercise();
 }
 // console.log(mainPerson)
+
+class Dinner {
+  constructor (appetizer, entree, dessert) {
+    this.appetizer = appetizer
+    this.entree = entree
+    this.dessert = dessert
+}
+}
+class Chef {
+    getDinner(appetizer,entree,dessert) {
+      return new Dinner(appetizer,entree,dessert)
+    }
+  }
+
+const topBoy = new Chef
+console.log(topBoy.getDinner("Cheese Sticks", "Wings", "Ice cream"))
+console.log(topBoy.getDinner("Onion Rings", "Stuffed Peppers", "Cookies"))
+console.log(topBoy.getDinner("Potato Wedges", "Salmon", "Brownies"))
+// console.log(topBoy)
